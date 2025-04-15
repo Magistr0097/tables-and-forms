@@ -29,3 +29,10 @@ h1 {
 .orders {
     margin: 20px 0;
 }
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 20px auto;
+}
