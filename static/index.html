@@ -21,16 +21,20 @@
 
         <label class="required">Пол питомца:</label>
         <div>
-            <input type="radio" id="gender-male" name="gender" value="male" required>
+            <input type="radio" id="gender-male" name="gender" value="boy" required>
             <label for="gender-male" style="display: inline;">Самец</label>
         </div>
         <div>
-            <input type="radio" id="gender-female" name="gender" value="female">
+            <input type="radio" id="gender-female" name="gender" value="girl">
             <label for="gender-female" style="display: inline;">Самка</label>
+        </div>
+        <div>
+            <input type="radio" id="gender-none" name="gender" value="none">
+            <label for="gender-none" style="display: inline;">Гермафродит</label>
         </div>
 
         <label for="eyeColor" class="required">Цвет глаз:</label>
-        <input type="text" id="eyeColor" name="eyeColor" placeholder="Голубой, зелёный, карий..." required>
+        <input type="color" id="eyeColor" name="eyeColor" placeholder="#ff0000" required>
 
         <label for="tailLength" class="required">Длина хвоста (см):</label>
         <input type="number" id="tailLength" name="tailLength" min="0" max="100" placeholder="15" required>
@@ -48,7 +52,7 @@
         <input type="tel" id="phone" name="phone" placeholder="+7 (XXX) XXX-XX-XX" required>
 
         <label>
-            <input type="checkbox" id="rules" name="rules" value="accepted" required>
+            <input type="checkbox" id="rules" name="rules" value="true" required>
             Я согласен с правилами передачи питомца
         </label>
 
